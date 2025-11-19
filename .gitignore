@@ -1,0 +1,81 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+.DS_Store
+
+# Android Studio
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android Studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+
+# Android Studio 3.6+
+.idea/modules.xml
+.idea/misc.xml
+.idea/compiler.xml
+.idea/gradle.xml
+.idea/libraries/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries
+.idea/shelf
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (replace with your own)
+google-services.json
+
+# External native build folder generated in CMake
+.externalNativeBuild
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Version control
+.vscode/
+
+# Lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+# lint/reports/
+
+# Android Profiling
+*.hprof
+
+# APK files
+*.apk
+*.ap_
+*.aab
+
+# Crashlytics config
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Temporary folders
+tmp/
+temp/

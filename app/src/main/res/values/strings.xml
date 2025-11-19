@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="auth_email_login">Sign in with Email</string>
+    <string name="auth_google_login">Sign in with Google</string>
+    <string name="auth_guest_login">Continue as Guest</string>
+    <string name="auth_subtitle_choose_method">Choose your sign-in method</string>
+    <string name="auth_terms_notice">By continuing, you agree to our Terms of Service and Privacy Policy</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_details">Details</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Authentication messages -->
+    <string name="auth_loading">Signing in…</string>
+    <string name="auth_email_coming_soon">Email authentication coming soon</string>
+    <string name="auth_google_coming_soon">Google Sign-In coming soon</string>
+    <string name="auth_success">Sign-in successful!</string>
+    <string name="auth_error_generic">Authentication failed. Please try again.</string>
+</resources>
