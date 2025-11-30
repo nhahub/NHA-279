@@ -1,18 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Movie App</string>
-    <string name="auth_email_login">Sign in with Email</string>
-    <string name="auth_google_login">Sign in with Google</string>
-    <string name="auth_guest_login">Continue as Guest</string>
-    <string name="auth_subtitle_choose_method">Choose your sign-in method</string>
-    <string name="auth_terms_notice">By continuing, you agree to our Terms of Service and Privacy Policy</string>
-    <string name="nav_home">Home</string>
-    <string name="nav_details">Details</string>
-    <string name="nav_profile">Profile</string>
+    <string name="app_name">Trailerly</string>
 
-    <!-- Authentication messages -->
-    <string name="auth_loading">Signing in…</string>
-    <string name="auth_email_coming_soon">Email authentication coming soon</string>
-    <string name="auth_google_coming_soon">Google Sign-In coming soon</string>
-    <string name="auth_success">Sign-in successful!</string>
-    <string name="auth_error_generic">Authentication failed. Please try again.</string>
+    <!-- Firebase Web Client ID (will be replaced by google-services.json) -->
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+
+    <!-- Authentication Strings -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="or">or</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+
+    <!-- Error Messages -->
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_passwords_dont_match">Passwords do not match</string>
+    <string name="error_sign_in_failed">Sign in failed. Please try again</string>
+    <string name="error_sign_up_failed">Sign up failed. Please try again</string>
+    <string name="error_google_sign_in_failed">Google sign in failed. Please try again</string>
+    <string name="error_network">Network error. Please check your connection</string>
+    <string name="error_no_internet">No internet connection. Please check your network and try again</string>
+    <string name="error_timeout">Request timed out. Please try again</string>
+    <string name="error_server">Server error. Please try again later</string>
+    <string name="error_unknown">An unexpected error occurred. Please try again</string>
+    <string name="retry">Retry</string>
+    <string name="offline_banner_message">You\'re offline. Some features may not work.</string>
+    <string name="offline_banner_dismiss">Dismiss</string>
+    <string name="no_movies_found">No movies found</string>
+    <string name="no_description_available">No description available</string>
+    <string name="image_load_failed">Image not available</string>
+    <string name="cast_info_unavailable">Cast information not available</string>
+    <string name="check_connection">Please check your internet connection and try again</string>
+
+    <!-- Movie Details Screen -->
+    <string name="movie_details_title">Movie Details</string>
+    <string name="main_cast">Main Cast</string>
+    <string name="description">Description</string>
+    <string name="trailer">Trailer</string>
+    <string name="share">Share</string>
+    <string name="trailer_unavailable">Trailer unavailable</string>
+    <string name="saved">Saved</string>
+    <string name="save">Save</string>
+    <string name="removed_from_saved">Removed from saved movies</string>
+    <string name="added_to_saved">Added to saved movies</string>
+    <string name="share_trailer_text">Check out the trailer for %1$s: %2$s</string>
+
+    <!-- Success Messages -->
+    <string name="success_sign_in">Successfully signed in</string>
+    <string name="success_sign_up">Account created successfully</string>
+    <string name="success_sign_out">Successfully signed out</string>
+
+    <!-- Loading Messages -->
+    <string name="loading">Loading...</string>
+    <string name="signing_in">Signing in...</string>
+    <string name="signing_up">Creating account...</string>
+    <string name="signing_out">Signing out...</string>
+
+    <!-- Profile Strings -->
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="name">Name</string>
+    <string name="settings">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="log_out">Log Out</string>
+
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="back">Back</string>
+
+    <!-- Content Description -->
+    <string name="cd_profile_image">Profile image</string>
+    <string name="cd_back_button">Back button</string>
+    <string name="cd_google_sign_in">Sign in with Google</string>
+    <string name="cd_guest_mode">Continue as guest</string>
+    <string name="toggle_language">Toggle language</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">Enable Notifications</string>
+    <string name="notification_permission_message">We\'d like to send you notifications about new movie releases and updates. This helps you stay informed about the latest movies.</string>
+    <string name="allow">Allow</string>
+    <string name="not_now">Not Now</string>
+
+    <!-- API Key Error -->
+    <string name="api_key_error_title">API Key Configuration Error</string>
+    <string name="api_key_error_instructions">Please check your TMDB API key configuration in local.properties and try again.</string>
+    <string name="close">Close</string>
+
+    <!-- Search -->
+    <string name="search_placeholder">Search movies...</string>
 </resources>

@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NHA-279"
+rootProject.name = "Trailerly"
 include(":app")
