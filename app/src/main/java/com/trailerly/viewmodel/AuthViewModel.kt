@@ -46,6 +46,9 @@ class AuthViewModel @Inject constructor(
     private val _authResult = MutableStateFlow<AuthResult?>(null)
     val authResult: StateFlow<AuthResult?> = _authResult.asStateFlow()
 
+    private val _isSigningIn = MutableStateFlow(false)
+    val isSigningIn: StateFlow<Boolean> = _isSigningIn.asStateFlow()
+
     // Network connectivity state shared with timeout handling
     val isOnline = networkMonitor.connectivityFlow
         .stateIn(
@@ -134,6 +137,7 @@ class AuthViewModel @Inject constructor(
         }
 
         _authResult.value = AuthResult.Loading
+        _isSigningIn.value = true
         viewModelScope.launch {
             try {
                 // If user is currently anonymous (guest), sign out first
@@ -149,6 +153,8 @@ class AuthViewModel @Inject constructor(
                 FirebaseCrashlytics.getInstance().setCustomKey("auth_operation", "sign_in_email")
                 FirebaseCrashlytics.getInstance().recordException(e)
                 _authResult.value = AuthResult.Error("An unexpected error occurred. Please try again.")
+            } finally {
+                _isSigningIn.value = false
             }
         }
     }
@@ -224,6 +230,7 @@ class AuthViewModel @Inject constructor(
         }
 
         _authResult.value = AuthResult.Loading
+        _isSigningIn.value = true
         viewModelScope.launch {
             try {
                 // If user is currently anonymous (guest), sign out first
@@ -239,6 +246,8 @@ class AuthViewModel @Inject constructor(
                 FirebaseCrashlytics.getInstance().setCustomKey("auth_operation", "sign_in_google")
                 FirebaseCrashlytics.getInstance().recordException(e)
                 _authResult.value = AuthResult.Error("An unexpected error occurred. Please try again.")
+            } finally {
+                _isSigningIn.value = false
             }
         }
     }

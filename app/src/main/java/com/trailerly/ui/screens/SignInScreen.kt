@@ -133,7 +133,7 @@ fun SignInScreen(
                 FirebaseCrashlytics.getInstance().setCustomKey("auth_success", true)
                 Timber.d("Authentication successful")
                 onLoginSuccess()
-                onNavigateToHome()
+                // Navigation is now handled reactively by Navigation.kt
             }
             is AuthResult.Error -> {
                 FirebaseCrashlytics.getInstance().setCustomKey("auth_error", (authResult as AuthResult.Error).message)
