@@ -1,7 +1,16 @@
 <div align="center">
   <h1>Trailerly</h1>
   <p><em>Discover movies. Watch trailers. Save favorites.</em></p>
+
+  <!-- Live Demo Video via Google Drive -->
+  <p>
+    🎬 <a href="https://drive.google.com/file/d/1R_O2WzlXSppTFt3Q_YhowYcShRtY1rkh/view" target="_blank">
+      Watch Live Demo (Google Drive)
+    </a>
+  </p>
 </div>
+
+<br/>
 
 <div align="center">
   <table>
